@@ -186,99 +186,176 @@ $conn_iplogger->close();
     <link rel="icon" href="icones/icone.ico" type="image/x-icon">    
     <title>Da onde</title>
     <style>
-        /* Resetting some default styles */
-        * {
-            
-            box-sizing: border-box;
-            max-width: 1350px;
-            margin: 0 auto;
-            padding: 0;
-            
-        }
+       
+* {
+    box-sizing: border-box;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0;
+}
 
-        html{
-            background-color: black;
-        }
+html {
+    background-color: black;
+}
 
-        body {
-            background-color: #f0f0f0;
-            color: #000;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        header {
-            background-color: black;
-            color: #fff;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .container {
-            width: 100%;          
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #fff;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .host-details pre {
-            
-            text-align: left;
-            font-size: 28px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            background-color: #f9f9f9;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            margin-bottom: 10px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: black;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #1e1e1e;
-        }
+body {
+    transform: scale(0.6); 
+    transform-origin: top center; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    background-color: #f0f0f0; 
+    color: #000; 
+    font-family: Arial, sans-serif;
+    text-align: center; 
 
 
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
 
-        #border{
-            margin-top: 20px;
-            border: 6px solid black;
-        }
-        #map {
-            width: 100%;
-            min-height: 600px;
-            border: 1px solid #ccc;
-        }
+       
 
-        footer {
-            background-color: black;
-            color: #fff;
-            padding: 10px;
-            margin-top: 20px;
-            border-top: 1px solid #ccc;
-        }
+       .host-details pre {
+    text-align: left;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e1e1e;
+}
+
+#border {
+    margin-top: 20px;
+    border: 6px solid black;
+}
+
+#map {
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+        @media (max-width: 768px) {
+    body{
+        transform: scale(1);
+        overflow-y: auto;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .host-details pre {
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #map {
+        min-height: 300px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        transform: scale(1);
+        overflow-y:auto;
+    }
+
+
+    header {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+     h2 {
+        font-size: 18px;
+    }
+
+    .host-details pre {
+        font-size: 14px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #map {
+        min-height: 250px;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+}
+
+
 
     </style>
 </head>
